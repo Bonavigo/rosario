@@ -1,2 +1,3 @@
-# rosario
-Só umas coisas pra rezar terço/rosário. Salve Maria!
+# Rosário
+Só umas coisas pra rezar terço/rosário.
+Salve Maria!
