@@ -3,7 +3,7 @@
 
 const ROSARIO = {
 	infoRos() {
-		Swal.fire('O que é o Rosário?', 'O Santo Rosário é uma prática religiosa de devoção mariana muito difundida entre os católicos. Ele consiste no uso de uma corrente com contas ou nós e a contemplação de determinadas passagens da vida de Jesus e de sua mãe, Nossa Senhora. São rezadas várias orações, principalmente a Ave-Maria, que no Rosário completo é rezada cento e cinquenta vezes, contemplando os quinze mistérios. Você também pode seguir os dias dos mistérios e rezar cinco mistérios e cinquenta ave-marias.');
+		Swal.fire('O que é o Rosário?', 'O Santo Rosário é uma prática religiosa de devoção mariana muito difundida entre os católicos. Ele consiste no uso de uma corrente com contas ou nós e a contemplação de determinadas passagens da vida de Jesus e de sua mãe, Nossa Senhora. São rezadas várias orações, principalmente a Ave-Maria, que no Rosário completo é rezada cento e cinquenta vezes, contemplando os quinze mistérios. Você também pode seguir os dias dos mistérios e rezar cinco mistérios e cinquenta Ave-Marias.');
 	},
 	infoDiasTer() {
 		Swal.fire('Dias do Terço', 'Mistérios Gozosos - segundas e quintas-feiras.<br>Mistérios Dolorosos - terças e sextas-feiras.<br>Mistérios Gloriosos - quartas-feiras, sábados e domingos.');
@@ -221,5 +221,8 @@ const ROSARIO = {
 			string = "Salve Rainha, Mãe de misericórdia,<br>vida, doçura e esperança nossa, Salve!<br>A vós bradamos os degredados filhos de Eva.<br>A vós suspiramos, gemendo e chorando neste vale de lágrimas.<br>Eia pois advogada nossa, esses vossos olhos misericordiosos a nós volvei.<br>E depois deste desterro, mostrai-nos Jesus, bendito fruto de vosso ventre.<br>Ó clemente! Ó piedosa! Ó doce sempre Virgem Maria!<br>V. Rogai por nós Santa Mãe de Deus.<br>R. Para que sejamos dignos das promessas de Cristo.<br>Amém.";
 		}
 		Swal.fire('Salve Rainha', string);
+	},
+	doar() {
+		Swal.fire('Doação', 'Caso queria doar-me, meu PicPay é @bruno.bonavigo<br>Fiz este site sem este propósito, mas se quiser ajudar-me, seria útil, estou pensando em comprar um domínio/hospedagem para hospedar esta página e outras relacionadas ao catolicismo.');
 	}
 }
