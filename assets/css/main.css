@@ -12,3 +12,9 @@ main {
 .background-white {
 	background-color: #FFF !important;
 }
+
+.btn-doar {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+}
