@@ -194,9 +194,9 @@ const ROSARIO = {
 		if (lingua === 'latim') {
 			string = 'Páter Nóster,<br>Qui es in cáelis,<br>sanctificétur nómen túum.<br>Advéniat régnum túum,<br>fíat volúntus túa,<br>sícut in cáelo et in térra.<br>Pánem nóstrum quotidiánum da nóbis hódie,<br>et dimítte nóbis débita nóstra,<br>sícut et nos dimíttimus debitóribus nóstris.<br>Et ne nos indúcas in tentatiónem:<br>sed líbera nos a málo.<br>Amen.';
 		} else {
-			string = "Santificado seja o vosso nome.<br>Venha a nós o vosso reino.<br>Seja feita a vossa vontade, assim na terra como no Céu.<br>O pão nosso de cada dia nos dai hoje.<br>Perdoai-nos as nossas dívidas assim como nós perdoamos aos nossos devedores.<br>E não nos deixeis cair em tentação.<br>Mas livrai-nos do mal.<br>Amém.";
+			string = "Pai Nosso que estais no céu,<br>Santificado seja o vosso nome.<br>Venha a nós o vosso reino.<br>Seja feita a vossa vontade, assim na terra como no Céu.<br>O pão nosso de cada dia nos dai hoje.<br>Perdoai-nos as nossas dívidas assim como nós perdoamos aos nossos devedores.<br>E não nos deixeis cair em tentação.<br>Mas livrai-nos do mal.<br>Amém.";
 		}
-		Swal.fire('Sinal da cruz', string);
+		Swal.fire('Pai Nosso', string);
 	},
 	gloria(lingua) {
 		if (lingua === 'latim') {
