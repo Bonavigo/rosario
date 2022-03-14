@@ -11,7 +11,7 @@ const ROSARIO = {
 	infoComoRezar() {
 		Swal.fire({
 			title: 'Como rezar?',
-			text: "O ideal para rezar o rosário é ter um terço, mas caso não tenha um, é possível rezar usando os dedos. Tendo-o, inicia-se fazendo o sinal da cruz, depois, segurando a cruz do terço, é rezado o Credo (as orações estarão em outra seção), e depois, na primeira cota, é rezado um Pai-Nosso, depois, nas três cotas que a sucedem, é rezado uma Ave-Maria, e enfim, na última cota antes da medalha, é rezado um Glória ao Pai e um Ó Meu Jesus.",
+			text: "O ideal para rezar o Rosário é ter um terço, mas caso não tenha um, é possível rezar usando os dedos. Tendo-o, inicia-se fazendo o sinal da cruz, depois, segurando a cruz do terço, é rezado o Credo (as orações estarão em outra seção), e depois, na primeira cota, é rezado um Pai-Nosso, depois, nas três cotas que a sucedem, é rezado uma Ave-Maria, e enfim, na última cota antes da medalha, é rezado um Glória ao Pai e um Ó Meu Jesus.",
 			showCancelButton: false,
 			confirmButtonColor: '#3085d6',
 			confirmButtonText: 'Prosseguir'
