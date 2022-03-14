@@ -21,7 +21,7 @@ const ROSARIO = {
 					title: 'Como rezar?',
 					text: "Agora, iniciando da direita para esquerda, é anunciado o primeiro mistério e é dada uma pausa para reflexão do mesmo, seguida por um Pai-Nosso, uma Ave-Maria para cada uma das 10 cotas e um Glória ao Pai e um Ó Meu Jesus ao fim. Repita esse processo para os próximos mistérios, e quando chegares na medalha, recite um Salve Rainha.",
 					showCancelButton: false,
-					confirmButtonColor: '#3085d6',
+					confirmButtonColor: '#d33',
 					confirmButtonText: 'Fechar'
 				})
 			}
@@ -64,7 +64,7 @@ const ROSARIO = {
 											title: 'Quintum mystérium gaudiósum: Inventiónem Dómini nostri Iesu Christi in templo (Quinto Mistério Gozoso: Perda e encontro do Menino Jesus no Templo)',
 											html: '«Naqueles tempos apareceu um decreto de César Augusto, ordenando o recenseamento de toda a terra. Este recenseamento foi feito antes do governo de Quirino, na Síria. Todos iam alistar-se, cada um na sua cidade.<br>Também José subiu da Galiléia, da cidade de Nazaré, à Judéia, à Cidade de Davi, chamada Belém, porque era da casa e família de Davi, para se alistar com a sua esposa Maria, que estava grávida. Estando eles ali, completaram-se os dias dela.<br>E deu à luz seu filho primogênito, e, envolvendo-o em faixas, reclinou-o num presépio; porque não havia lugar para eles na hospedaria» (Lc 2,1-7).',
 											showCancelButton: false,
-											confirmButtonColor: '#3085d6',
+											confirmButtonColor: '#d33',
 											confirmButtonText: 'Fechar'
 										})
 									}
@@ -113,7 +113,7 @@ const ROSARIO = {
 											title: 'Quintum mystérium dolorósum: Crucifixiónem Dómini nostri Iesu Christi (Quinto Mistério Doloroso: Crucifixão e morte de Jesus)',
 											html: '«Naqueles tempos apareceu um decreto de César Augusto, ordenando o recenseamento de toda a terra. Este recenseamento foi feito antes do governo de Quirino, na Síria. Todos iam alistar-se, cada um na sua cidade.<br>Também José subiu da Galiléia, da cidade de Nazaré, à Judéia, à Cidade de Davi, chamada Belém, porque era da casa e família de Davi, para se alistar com a sua esposa Maria, que estava grávida. Estando eles ali, completaram-se os dias dela.<br>E deu à luz seu filho primogênito, e, envolvendo-o em faixas, reclinou-o num presépio; porque não havia lugar para eles na hospedaria» (Lc 2,1-7).',
 											showCancelButton: false,
-											confirmButtonColor: '#3085d6',
+											confirmButtonColor: '#d33',
 											confirmButtonText: 'Fechar'
 										})
 									}
@@ -162,7 +162,7 @@ const ROSARIO = {
 											title: 'Quintum mystérium gloriósum: Coronatiónem Beátæ Maríæ Vírginis in cáelum (Quinto Mistério Glorioso: Coroação de Maria no Céu)',
 											html: '«Apareceu em seguida um grande sinal no céu: uma Mulher revestida do sol, a lua debaixo dos seus pés e na cabeça uma coroa de doze estrelas» (Ap 12, 1).',
 											showCancelButton: false,
-											confirmButtonColor: '#3085d6',
+											confirmButtonColor: '#d33',
 											confirmButtonText: 'Fechar'
 										})
 									}
@@ -226,3 +226,6 @@ const ROSARIO = {
 		Swal.fire('Doação', 'Caso queria doar-me, meu PicPay é @bruno.bonavigo<br>Fiz este site sem este propósito, mas se quiser ajudar-me, seria útil, estou pensando em comprar um domínio/hospedagem para hospedar esta página e outras relacionadas ao catolicismo.');
 	}
 }
+
+Waves.attach('.btn-wave');
+Waves.init();
