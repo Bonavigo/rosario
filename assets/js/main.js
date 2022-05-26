@@ -221,9 +221,6 @@ const ROSARIO = {
 			string = "Salve Rainha, Mãe de misericórdia,<br>vida, doçura e esperança nossa, Salve!<br>A vós bradamos os degredados filhos de Eva.<br>A vós suspiramos, gemendo e chorando neste vale de lágrimas.<br>Eia pois advogada nossa, esses vossos olhos misericordiosos a nós volvei.<br>E depois deste desterro, mostrai-nos Jesus, bendito fruto de vosso ventre.<br>Ó clemente! Ó piedosa! Ó doce sempre Virgem Maria!<br>V. Rogai por nós Santa Mãe de Deus.<br>R. Para que sejamos dignos das promessas de Cristo.<br>Amém.";
 		}
 		Swal.fire('Salve Rainha', string);
-	},
-	doar() {
-		Swal.fire('Doação', 'Caso queria doar-me, meu PicPay é @bruno.bonavigo<br>Fiz este site sem este propósito, mas se quiser ajudar-me, seria útil, estou pensando em comprar um domínio/hospedagem para hospedar esta página e outras relacionadas ao catolicismo.');
 	}
 }
 
