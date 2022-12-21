@@ -2,10 +2,20 @@
 // Viva Cristo Rei! Viva Maria Rainha!
 
 const ROSARIO = {
-	infoRos() {
+	audio: null,
+	startup() {
+		const toastInfo = document.getElementById('toastInfo');
+		const toast = new bootstrap.Toast(toastInfo, {
+			animation: true,
+			autohide: true,
+			delay: 8000,
+		});
+		toast.show();
+	},
+	infoRosario() {
 		Swal.fire('O que é o Rosário?', 'O Santo Rosário é uma prática religiosa de devoção mariana muito difundida entre os católicos. Ele consiste no uso de uma corrente com contas ou nós e a contemplação de determinadas passagens da vida de Jesus e de sua mãe, Nossa Senhora. São rezadas várias orações, principalmente a Ave-Maria, que no Rosário completo é rezada cento e cinquenta vezes, contemplando os quinze mistérios. Você também pode seguir os dias dos mistérios e rezar cinco mistérios e cinquenta Ave-Marias.');
 	},
-	infoDiasTer() {
+	infoDiasTerco() {
 		Swal.fire('Dias do Terço', 'Mistérios Gozosos - segundas e quintas-feiras.<br>Mistérios Dolorosos - terças e sextas-feiras.<br>Mistérios Gloriosos - quartas-feiras, sábados e domingos.');
 	},
 	infoComoRezar() {
@@ -174,9 +184,44 @@ const ROSARIO = {
 			}
 		});
 	},
+	buttonPronuncia(oracao) {
+		base = `<br><button type="button" class="btn btn-outline-secondary button-play" onclick="ROSARIO.tocarOracao('${oracao}.mp3')"><i class="bi bi-play-fill"></i></button>`;
+		return base;
+	},
+	tocarOracao(oracao) {
+		if (this.audio) {
+			this.audio.pause();
+		}
+		this.audio = new Audio(`assets/audio/${oracao}`);
+		this.audio.play();
+	},
+	pronunciaLatim() {
+		string = "A pronúncia do latim eclesiástico é, basicamente, uma pronúncia italiana.<br>Quando o C é seguido de um I ou um E, ele é pronunciado como se houvesse um H. Exemplo: Crucifíxus é pronunciado Cruchifíxus.<br>Os ditongos ae e oe são pronunciados somente como um e aberto. Exemplo: Cáelum é pronunciado Chelum.<br>O G é pronunciado como dj. Exemplo: Regina é pronunciada como Redjina.<br> O ditongo ti é pronunciado como ci (sem o h). Exemplo: Tentatiónem é pronunciada como tentaciónem.";
+		Swal.fire('Como pronunciar o latim', string);
+	},
+	oferecimentoTerco() {
+		string = "Uno-me a todos os santos que estão no Céu, a todos os justos que estão sobre a Terra, a todas as almas fiéis que estão neste lugar. Uno-me a Vós, meu Jesus, para louvar dignamente Vossa Santa Mãe, e louvar-Vos a Vós, nela e por Ela. Renuncio a todas as distrações que me vierem durante este Rosário, que quero recitar com modéstia, atenção e devoção, como se fosse o último da minha vida.<br>Nós Vos oferecemos, Trindade Santíssima, este Credo, para honrar os mistérios todos de nossa Fé; este Pater (Pai Nosso) e estas três Ave-Marias, para honrar a unidade de vossa essência e a trindade de vossas pessoas. Pedimo-Vos uma fé viva, uma esperança firme e uma caridade ardente. Assim seja.";
+		Swal.fire('Oferecimento do terço', string);
+	},
+	primeirasAveMarias() {
+		string = "Louvemos a Maria, Filha bem amada do Pai Eterno. <a href=\"javascript:void(0)\" onclick=\"ROSARIO.aveMaria('latim')\">Ave Maria</a>...<br>Louvemos a Maria, Mãe admirável de Deus Filho. <a href=\"javascript:void(0)\" onclick=\"ROSARIO.aveMaria('latim')\">Ave Maria</a>...<br>Esposa fidelíssima de Deus Espírito Santo. <a href=\"javascript:void(0)\" onclick=\"ROSARIO.aveMaria('latim')\">Ave Maria</a>...";
+		Swal.fire('Três primeiras Ave-Marias', string);
+	},
+	oferecimentoMisteriosGozosos() {
+		string = "Nós vos oferecemos, Senhor Jesus, esta primeira dezena, em honra a vossa Encarnação no seio de Maria; e vos pedimos, por esse mistério, e por sua intercessão uma profunda humildade. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta segunda dezena, em honra da visitação de vossa santa Mãe à sua prima santa Isabel e da santificação de São João Batista; e vos pedimos, por esse mistério e pela intercessão de vossa Mãe Santíssima, a caridade para com o nosso próximo. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta terceira dezena, em honra ao vosso nascimento no estábulo de Belém; e vos pedimos, por este mistério e pela intercessão de vossa Mãe Santíssima, o desapego dos bens terrenos e ao amor a pobreza. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta quarta dezena, em honra a vossa apresentação ao templo, e da purificação de Maria; e vos pedimos, por este mistério e por sua intercessão, uma grande pureza de corpo de alma. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta quinta dezena, em honra ao vosso reencontro por Maria; e vos pedimos, por este mistério; e por sua intercessão, a verdadeira sabedoria.";
+		Swal.fire('Oferecimento dos Mistérios Gozosos', string);
+	},
+	oferecimentoMisteriosDolorosos() {
+		string = "Nós vos oferecemos, Senhor Jesus, esta primeira/sexta dezena, em honra a vossa agonia mortal no Jardim das Oliveiras; e vos pedimos, por este mistério e pela intercessão de vossa Mãe Santíssima, a contrição de nossos pecados. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta segunda/sétima dezena, em honra a vossa sangrenta flagelação; e vos pedimos, por este mistério e pela intercessão de vossa Mãe santíssima, a mortificação de nossos sentidos. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta terceira/oitava dezena, em honra de vossa coroação de espinhos; e vos pedimos por este mistério e pela intercessão de vossa Mãe Santíssima, o desprezo do mundo. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta quarto/nona dezena, em honra do carregamento da Cruz; e vos pedimos, por este mistério e pela intercessão de vossa Mãe Santíssima, a paciência em todas as nossas cruzes. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta quinto/décima dezena, em honra a vossa crucificação e morte ignominiosa sobre o calvário; e vos pedimos por este mistério e pela intercessão de vossa Mãe Santíssima, a conversão dos pecadores, a perseverança dos justos e o alívio das almas do purgatório. Assim seja.";
+		Swal.fire('Oferecimento dos Mistérios Dolorosos', string);
+	},
+	oferecimentoMisteriosGloriosos() {
+		string = "Nós vos oferecemos, Senhor Jesus, esta primeira/undécima dezena, em honra a vossa ressurreição gloriosa; e vos pedimos, por este mistério e pela intercessão de vossa Mãe Santíssima, o amor a Deus e o fervor ao vosso serviço. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta segunda/duodécima dezena, em honra a vossa triunfante ascensão; e vos pedimos, por este mistério e pela intercessão de vossa Mãe Santíssima, um ardente desejo do céu, nossa cara pátria. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta terceira/décima terceira dezena, em honra do mistério de Pentecostes; e vos pedimos, por este mistério e pela intercessão de vossa Mãe Santíssima, a descida do Espírito Santo em nossas almas. Assim seja.<br>Nós vos oferecemos, Senhor Jesus, esta quarta/décima quarta dezena, em honra da ressurreição e triunfal assunção de vossa Mãe ao céu; e vos pedimos, por este mistério e por sua intercessão, uma terna devoção a tão boa mãe. Assim seja.<br>Nós vos oferecemos, Senhor Jesus esta quinta/décima quinta dezena, em honra da coroação gloriosa de vossa Mãe Santíssima no céu; e vos pedimos, por este mistério e por sua intercessão, a perseverança na graça e a coroa da glória. Assim seja.";
+		Swal.fire('Oferecimento dos Mistérios Gloriosos', string);
+	},
 	sinalDaCruz(lingua) {
 		if (lingua === 'latim') {
-			string = 'In nómine Pátris, et Fílii, et Spíritus Sáncti. Amen.';
+			string = "In nómine Pátris, et Fílii, et Spíritus Sáncti. Amen." + this.buttonPronuncia('signum_crucis');
 		} else {
 			string = "Em nome do Pai, do Filho e do Espírito Santo. Amém.";
 		}
@@ -184,15 +229,15 @@ const ROSARIO = {
 	},
 	credo(lingua) {
 		if (lingua === 'latim') {
-			string = "Crédo in Déum Pátrem omnipoténtem,<br>Creatórem cáeli et térræ.<br>Et in Iésum Chrístum, Fílium éius unícum, Dóminum nóstrum:<br>qui concéptus est de Spíritu Sáncto,<br>nátus ex María Vírgine,<br>pássus sub Póntio Piláto,<br>crucifíxus, mórtuus, et sepúltus:<br>descéndit ad ínfernos:<br>tértia die resurréxit a mórtuis:<br>ascéndit ad cáelos:<br>sédet ad déxteram Déi Pátris omnipoténtis:<br>índe ventúrus est iudicáre vívos et mórtuos.<br>Crédo in Spíritum Sánctum,<br>sánctam Ecclésiam Cathólicam,<br>Sanctórum Communiónem,<br>remissiónem peccatórum,<br>cárnis resurrectiónem,<br>vítam ætérnam.<br>Amen.";
+			string = "Crédo in Déum Pátrem omnipoténtem,<br>Creatórem cáeli et térræ.<br>Et in Iésum Chrístum, Fílium éius unícum, Dóminum nóstrum:<br>qui concéptus est de Spíritu Sáncto,<br>nátus ex María Vírgine,<br>pássus sub Póntio Piláto,<br>crucifíxus, mórtuus, et sepúltus:<br>descéndit ad ínfernos:<br>tértia die resurréxit a mórtuis:<br>ascéndit ad cáelos:<br>sédet ad déxteram Déi Pátris omnipoténtis:<br>índe ventúrus est iudicáre vívos et mórtuos.<br>Crédo in Spíritum Sánctum,<br>sánctam Ecclésiam Cathólicam,<br>Sanctórum Communiónem,<br>remissiónem peccatórum,<br>cárnis resurrectiónem,<br>vítam ætérnam.<br>Amen." + this.buttonPronuncia('credo');
 		} else {
-			string = 'Creio em Deus Pai Todo-Poderoso,<br>criador do céu e da terra.<br>E em Jesus Cristo, seu único Filho Nosso Senhor,<br>o qual foi concebido pelo poder do Espírito Santo,<br>nasceu de Maria Virgem,<br>padeceu sob Pôncio Pilatus,<br>foi crucificado, morto e sepultado,<br>desceu aos infernos,<br>ao terceiro dia ressurgiu dos mortos,<br>subiu ao Céu, está sentado à direita de Deus Pai todo-poderoso,<br>de onde há de vir a julgar os vivos e mortos.<br>Creio no Espírito Santo.<br>Na Santa Igreja Católica,<br>na comunhão dos santos,<br>na remissão dos pecados,<br>na ressurreição da carne,<br>na vida eterna.<br>Amém.';
+			string = "Creio em Deus Pai Todo-Poderoso,<br>criador do céu e da terra.<br>E em Jesus Cristo, seu único Filho Nosso Senhor,<br>o qual foi concebido pelo poder do Espírito Santo,<br>nasceu de Maria Virgem,<br>padeceu sob Pôncio Pilatus,<br>foi crucificado, morto e sepultado,<br>desceu aos infernos,<br>ao terceiro dia ressurgiu dos mortos,<br>subiu ao Céu, está sentado à direita de Deus Pai todo-poderoso,<br>de onde há de vir a julgar os vivos e mortos.<br>Creio no Espírito Santo.<br>Na Santa Igreja Católica,<br>na comunhão dos santos,<br>na remissão dos pecados,<br>na ressurreição da carne,<br>na vida eterna.<br>Amém.";
 		}
 		Swal.fire('Credo', string);
 	},
 	paiNosso(lingua) {
 		if (lingua === 'latim') {
-			string = 'Páter Nóster,<br>Qui es in cáelis,<br>sanctificétur nómen túum.<br>Advéniat régnum túum,<br>fíat volúntus túa,<br>sícut in cáelo et in térra.<br>Pánem nóstrum quotidiánum da nóbis hódie,<br>et dimítte nóbis débita nóstra,<br>sícut et nos dimíttimus debitóribus nóstris.<br>Et ne nos indúcas in tentatiónem:<br>sed líbera nos a málo.<br>Amen.';
+			string = "Páter Nóster,<br>Qui es in cáelis,<br>sanctificétur nómen túum.<br>Advéniat régnum túum,<br>fíat volúntus túa,<br>sícut in cáelo et in térra.<br>Pánem nóstrum quotidiánum da nóbis hódie,<br>et dimítte nóbis débita nóstra,<br>sícut et nos dimíttimus debitóribus nóstris.<br>Et ne nos indúcas in tentatiónem:<br>sed líbera nos a málo.<br>Amen." + this.buttonPronuncia('pater_noster');
 		} else {
 			string = "Pai Nosso que estais no céu,<br>Santificado seja o vosso nome.<br>Venha a nós o vosso reino.<br>Seja feita a vossa vontade, assim na terra como no Céu.<br>O pão nosso de cada dia nos dai hoje.<br>Perdoai-nos as nossas dívidas assim como nós perdoamos aos nossos devedores.<br>E não nos deixeis cair em tentação.<br>Mas livrai-nos do mal.<br>Amém.";
 		}
@@ -200,7 +245,7 @@ const ROSARIO = {
 	},
 	gloria(lingua) {
 		if (lingua === 'latim') {
-			string = 'Glória Pátri, et Fílio, et Spirítui Sáncto. Sícut érat in princípio, et nunc, et sémper, et in sáecula sæculórum. Amen.<br>O (mi) Bóne Iésu, líbera nos a peccatís nóstris; líbera nos ab ígnibus gehénnae; perdúc in paradísum ómnes animás præsértim eas quae plus misericórdia tua indígent!';
+			string = "Glória Pátri, et Fílio, et Spirítui Sáncto. Sícut érat in princípio, et nunc, et sémper, et in sáecula sæculórum. Amen.<br>O (mi) Bóne Iésu, líbera nos a peccatís nóstris; líbera nos ab ígnibus gehénnae; perdúc in paradísum ómnes animás præsértim eas quae plus misericórdia tua indígent!" + this.buttonPronuncia('gloria');
 		} else {
 			string = "Gloria ao Pai, ao Filho e ao Espírito Santo, assim como era no princípio, agora e sempre e por todos os séculos dos séculos, Amém.<br>Ó Meu Jesus perdoai-nos, livrai-nos do fogo do inferno, levai as almas todas para o céu, principalmente as que mais precisarem.";
 		}
@@ -208,7 +253,7 @@ const ROSARIO = {
 	},
 	aveMaria(lingua) {
 		if (lingua === 'latim') {
-			string = 'Áve María, grátia pléna, Dóminus técum.<br>Benedícta tu in muliéribus, et benedíctus frúctus véntris túi, Iésus.<br>Sáncta María, Máter Déi, óra pro nóbis peccatóribus, nunc, et in hóra mórtis nóstræ.<br>Amen.';
+			string = "Áve María, grátia pléna, Dóminus técum.<br>Benedícta tu in muliéribus, et benedíctus frúctus véntris túi, Iésus.<br>Sáncta María, Máter Déi, óra pro nóbis peccatóribus, nunc, et in hóra mórtis nóstræ.<br>Amen." + this.buttonPronuncia('ave_maria');
 		} else {
 			string = "Ave Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus. <br>Santa Maria, Mãe de Deus, rogai por nós pecadores, agora e na hora da nossa morte.<br>Ámen.";
 		}
@@ -216,13 +261,14 @@ const ROSARIO = {
 	},
 	salveRainha(lingua) {
 		if (lingua === 'latim') {
-			string = 'Sálve Regína, Máter misericórdiæ!<br>Víta, dulcédo, et spes nóstra, sálve.<br>Ad te clamámus, éxsules filii Hévæ.<br>Ad te suspirámus,<br>geméntes et fléntes in hac lacrimárum válle.<br>Éia érgo, Advocáta nóstra,<br>íllos túos misericórdes óculos ad nos convérte.<br>Et Iésum, benedíctum frúctum véntris túi,<br>nóbis post hoc exsílium osténde.<br>O clémens, O pía, O dúlcis Vírgo María!<br>V/. Óra pro nóbis, Sáncta Déi Génetrix.<br>R/. Ut dígni efficiámur promissiónibus Chrísti.<br>Amen.';
+			string = "Sálve Regína, Máter misericórdiæ!<br>Víta, dulcédo, et spes nóstra, sálve.<br>Ad te clamámus, éxsules filii Hévæ.<br>Ad te suspirámus,<br>geméntes et fléntes in hac lacrimárum válle.<br>Éia érgo, Advocáta nóstra,<br>íllos túos misericórdes óculos ad nos convérte.<br>Et Iésum, benedíctum frúctum véntris túi,<br>nóbis post hoc exsílium osténde.<br>O clémens, O pía, O dúlcis Vírgo María!<br>℣. Óra pro nóbis, Sáncta Déi Génetrix.<br>℟. Ut dígni efficiámur promissiónibus Chrísti.<br>Amen." + this.buttonPronuncia('salve_regina');
 		} else {
-			string = "Salve Rainha, Mãe de misericórdia,<br>vida, doçura e esperança nossa, Salve!<br>A vós bradamos os degredados filhos de Eva.<br>A vós suspiramos, gemendo e chorando neste vale de lágrimas.<br>Eia pois advogada nossa, esses vossos olhos misericordiosos a nós volvei.<br>E depois deste desterro, mostrai-nos Jesus, bendito fruto de vosso ventre.<br>Ó clemente! Ó piedosa! Ó doce sempre Virgem Maria!<br>V. Rogai por nós Santa Mãe de Deus.<br>R. Para que sejamos dignos das promessas de Cristo.<br>Amém.";
+			string = "Salve Rainha, Mãe de misericórdia,<br>vida, doçura e esperança nossa, Salve!<br>A vós bradamos os degredados filhos de Eva.<br>A vós suspiramos, gemendo e chorando neste vale de lágrimas.<br>Eia pois advogada nossa, esses vossos olhos misericordiosos a nós volvei.<br>E depois deste desterro, mostrai-nos Jesus, bendito fruto de vosso ventre.<br>Ó clemente! Ó piedosa! Ó doce sempre Virgem Maria!<br>℣. Rogai por nós Santa Mãe de Deus.<br>℟. Para que sejamos dignos das promessas de Cristo.<br>Amém.";
 		}
 		Swal.fire('Salve Rainha', string);
 	}
 }
 
+ROSARIO.startup();
 Waves.attach('.btn-wave');
 Waves.init();
