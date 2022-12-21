@@ -17,13 +17,13 @@ O Rosário já trouxe várias graças, servindo inclusive para a vitória na Bat
 O Rosário ajuda na meditação da vida de Cristo, é um meio de pedir graças para Nossa Senhora, ajudando na fuga do pecado e na busca pela santidade.
 
 >Sabei que a peça principal da bateria foi a saudação angélica, que é o fundamento do Novo Testamento; e, portanto, se queres ganhar para Deus esses corações endurecidos, reza o meu saltério.
-- Nossa Senhora do Rosário
+— Nossa Senhora do Rosário
 
 >Rezem o Rosário todos os dias para alcançar a paz no mundo e o fim da guerra.
-- Nossa Senhora do Rosário de Fátima
+— Nossa Senhora do Rosário de Fátima
 
 > O Rosário é a mais bela e a mais preciosa de todas as orações à Medianeira de todas as graças: é a prece que mais toca o coração da Mãe de Deus. Rezai-o todos os dias.
-- São Pio X
+— São Pio X
 
 ## Como posso ajudar?
 Você pode compartilhar o site para que ele possa ser útil para mais pessoas, ou abrir um *issue* aqui no *Github* caso encontre algo faltando ou algum erro!
