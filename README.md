@@ -4,7 +4,7 @@ Salve Maria!
 
 Este é um site que fiz para ajudar as pessoas a rezar o Rosário da forma tradicional. Nele estão as orações e os mistérios.
 
-Usei de base o site do <a href="https://www.vatican.va/special/rosary/documents/misteri_po.html" target="_blank">Vaticano</a>, o site <a href="https://traditionalcatholicprayers.com/2019/11/12/how-to-pray-the-rosary-in-latin/" target="_blank">Traditional Catholic Prayers</a> e o site da<a href="https://www.montfort.org.br/bra/oracoes/oracoes/o_rosario/" target="_blank">Montfort</a>.
+Usei de base o site do <a href="https://www.vatican.va/special/rosary/documents/misteri_po.html" target="_blank">Vaticano</a>, o site <a href="https://traditionalcatholicprayers.com/2019/11/12/how-to-pray-the-rosary-in-latin/" target="_blank">Traditional Catholic Prayers</a> e o site da <a href="https://www.montfort.org.br/bra/oracoes/oracoes/o_rosario/" target="_blank">Montfort</a>.
 
 ## Como usar?
 É muito simples! Basta usar os botões com as informações para descobrir como o Rosário é rezado e uma imagem explicativa, e depois, rolando, você encontrará como pronunciar latim, algumas orações que São Luís Maria Grignion de Montfort recomenda, e as orações do Rosário, em português e latim. As versões em latim tem um botão para tocar a pronúncia.
