@@ -39,40 +39,40 @@ const ROSARIO = {
 	},
 	infoMisGozosos() {
 		Swal.fire({
-			title: 'Prímum mystérium gaudiósum: Annuntiatiónem Beátæ Maríæ Vírginis (Primeiro Mistério Gozoso: Anunciação a Maria)',
-			html: '«No sexto mês, o anjo Gabriel foi enviado por Deus a uma cidade da Galiléia, chamada Nazaré,  a uma virgem desposada com um homem que se chamava José, da casa de Davi e o nome da virgem era Maria» (Lc 1, 26-27).',
+			title: 'Annuntiatio Beatae Virgini Mariae (Anunciação a Bem Aventurada Virgem Maria)',
+			html: '«Estando Isabel no sexto mês, foi enviado por Deus o anjo Gabriel a uma cidade da Galileia, chamada Nazaré, a uma virgem desposada com um varão, chamado José, da casa de David; o nome da virgem era Maria.» (Lc 1, 26-27).',
 			showCancelButton: false,
 			confirmButtonColor: '#3085d6',
 			confirmButtonText: 'Prosseguir'
 		}).then((result) => {
 			if (result.isConfirmed) {
 				Swal.fire({
-					title: 'Secúndum mystérium gaudiósum: Visitatiónem Beátæ Maríæ Vírginis (Segundo Mistério Gozoso: Visitação de Nossa Senhora a sua prima Isabel)',
-					html: '«Naqueles dias, Maria se levantou e foi às pressas às montanhas, a uma cidade de Judá. Entrou em casa de Zacarias e saudou Isabel. Ora, apenas Isabel ouviu a saudação de Maria, a criança estremeceu no seu seio; e Isabel ficou cheia do Espírito Santo. E exclamou em alta voz: "Bendita és tu entre as mulheres e bendito é o fruto do teu ventre"» (Lc 1, 39-42).',
+					title: 'Visitatio Beatae Virginis Mariae (Visitação da Bem Aventurada Virgem Maria)',
+					html: '«Naqueles dias, levantando-se Maria, foi com pressa às montanhas, a uma cidade de Judá. Entrou em casa de Zacarias, e saudou Isabel. Aconteceu que, apenas Isabel ouviu a saudação de Maria, o menino saltou no seu ventre, e Isabel ficou cheia do Espírito Santo; e exclamou em alta voz: "Bendita és tu entre todas as mulheres, e bendito é o fruto do teu ventre."» (Lc 1, 39-42).',
 					showCancelButton: false,
 					confirmButtonColor: '#3085d6',
 					confirmButtonText: 'Prosseguir'
 				}).then((result) => {
 					if (result.isConfirmed) {
 						Swal.fire({
-							title: 'Tértium mystérium gaudiósum: Nativitátem Dómini nostri Iesu Christi (Terceiro Mistério Gozoso: Nascimento de Jesus)',
-							html: '«Naqueles tempos apareceu um decreto de César Augusto, ordenando o recenseamento de toda a terra. Este recenseamento foi feito antes do governo de Quirino, na Síria. Todos iam alistar-se, cada um na sua cidade.<br>Também José subiu da Galiléia, da cidade de Nazaré, à Judéia, à Cidade de Davi, chamada Belém, porque era da casa e família de Davi, para se alistar com a sua esposa Maria, que estava grávida. Estando eles ali, completaram-se os dias dela.<br>E deu à luz seu filho primogênito, e, envolvendo-o em faixas, reclinou-o num presépio; porque não havia lugar para eles na hospedaria» (Lc 2,1-7).',
+							title: 'Nativitas Domini Nostri Jesu Christi (Nascimento de Nosso Senhor Jesus Cristo)',
+							html: '«Naqueles dias, saiu um édito de César Augusto, prescrevendo o recenseamento de todo o mundo. Este recenseamento foi anterior ao que se realizou quando Quirino era governador da Síria. Iam todos recensear-se, cada um à sua cidade. José foi também da Galileia, da cidade de Nazaré, à Judeia, à cidade de David, que se chamava Belém, porque era da casa e família de David, para se recensear juntamente com Maria, sua esposa, que estava grávida. Ora, estando ali, aconteceu completarem-se os dias em que devia dar à luz, e deu à luz o seu filho primogénito, e o enfaixou, e o reclinou numa manjedoura, porque não havia lugar para eles na estalagem.» (Lc 2,1-7).',
 							showCancelButton: false,
 							confirmButtonColor: '#3085d6',
 							confirmButtonText: 'Prosseguir'
 						}).then((result) => {
 							if (result.isConfirmed) {
 								Swal.fire({
-									title: 'Quartum mystérium gaudiósum Oblatiónem Dómini nostri Iesu Christi (Quarto Mistério Gozoso: Apresentação do Menino Jesus no Templo)',
-									html: '«Completados que foram os oito dias para ser circuncidado o menino, foi-lhe posto o nome de Jesus, como lhe tinha chamado o anjo, antes de ser concebido no seio materno. Concluídos os dias da sua purificação segundo a Lei de Moisés, levaram-no a Jerusalém para o apresentar ao Senhor, conforme o que está escrito na lei do Senhor: Todo primogênito do sexo masculino será consagrado ao Senhor; e para oferecerem o sacrifício prescrito pela lei do Senhor, um par de rolas ou dois pombinhos.» (Lc 2, 21-24).',
+									title: 'Praesentatio Jesu et Purificatio Mariae (Apresentação de Jesus e Purificação de Maria)',
+									html: '«Depois que se completaram os oito dias para ser circuncidado o Menino, foi-lhe posto o nome de Jesus, como lhe tinha chamado o anjo, antes que fosse concebido no ventre materno. Depois que se completaram os dias da purificação de Maria, segundo a lei de Moisés, levaram-no a Jerusalém para o apresentar ao Senhor, segundo o que está escrito na lei do Senhor : Todo o varão primogênito será consagrado ao Senhor, e para oferecerem em sacrifício, conforme o que também está escrito na lei do Senhor, um par de rolas ou dois pombinhos.» (Lc 2, 21-24).',
 									showCancelButton: false,
 									confirmButtonColor: '#3085d6',
 									confirmButtonText: 'Prosseguir'
 								}).then((result) => {
 									if (result.isConfirmed) {
 										Swal.fire({
-											title: 'Quintum mystérium gaudiósum: Inventiónem Dómini nostri Iesu Christi in templo (Quinto Mistério Gozoso: Perda e encontro do Menino Jesus no Templo)',
-											html: '«Seus pais iam todos os anos a Jerusalém para a festa da Páscoa. Tendo ele atingido doze anos, subiram a Jerusalém, segundo o costume da festa. Acabados os dias da festa, quando voltavam, ficou o menino Jesus em Jerusalém, sem que os seus pais o percebessem...<br>Três dias depois o acharam no templo, sentado no meio dos doutores, ouvindo-os e interrogando-os. Todos os que o ouviam estavam maravilhados da sabedoria de suas respostas» (Lc 2, 41-47)',
+											title: 'Inventio Pueri Jesu (Encontro do Menino Jesus)',
+											html: '«Seus pais iam todos os anos a Jerusalém, pela festa da Páscoa. Quando chegou aos doze anos, indo eles a Jerusalém segundo o costume daquela festa, acabados os dias que ela durava, quando voltaram, ficou o Menino Jesus em Jerusalém, sem que seus país o advertissem. Julgando que ele fosse na comitiva, caminharam uma jornada, e depois procuraram-no entre os parentes e conhecidos. Não o encontrando, voltaram a Jerusalém em busca dele. Aconteceu que, três dias depois, o encontraram no templo sentado no meio dos doutores, ouvindo-os e interrogando-os. E todos os que ouviam, estavam maravilhados da sua sabedoria e das suas respostas.» (Lc 2, 41-47)',
 											showCancelButton: false,
 											confirmButtonColor: '#d33',
 											confirmButtonText: 'Fechar'
@@ -88,40 +88,40 @@ const ROSARIO = {
 	},
 	infoMisDolorosos() {
 		Swal.fire({
-			title: 'Prímum mystérium dolorósum: Agóniam Dómini nostri Iesu Christi in horto (Primeiro Mistério Doloroso: Agonia de Jesus no Horto)',
-			html: '«Retirou-se Jesus com eles para um lugar chamado Getsêmani e disse-lhes: "Assentai-vos aqui, enquanto eu vou ali orar". E, tomando consigo Pedro e os dois filhos de Zebedeu, começou a entristecer-se e a angustiar-se. Disse-lhes, então: "Minha alma está triste até a morte. Ficai aqui e vigiai comigo". Adiantou-se um pouco e, prostrando-se com a face por terra, assim rezou: "Meu Pai, se é possível, afasta de mim este cálice! Todavia não se faça o que eu quero, mas sim o que tu queres"» (Mt 26, 36-39).',
+			title: 'Jesu in agonia factus (Jesus em agonia)',
+			html: 'Então foi Jesus com eles a um lugar chamado Getsemani, e disse-lhes: "Sentai-vos aqui, enquanto eu vou acolá orar." E, tendo tomado consigo Pedro e os dois filhos de Zebedeu, começou a entristecer-se e angustiar-se. Disse-lhes então: "A minha alma está numa tristeza mortal; ficai aqui e vigiai comigo." Adiantando-se um pouco, prostrou-se com o rosto em terra, e fez esta oração: "Meu Pai, se é possível, passe de mim este cálice! Todavia não se faça como eu quero, mas sim como tu queres."» (Mt 26, 36-39).',
 			showCancelButton: false,
 			confirmButtonColor: '#3085d6',
 			confirmButtonText: 'Prosseguir'
 		}).then((result) => {
 			if (result.isConfirmed) {
 				Swal.fire({
-					title: 'Secúndum mystérium dolorósum: Flagellatiónem Dómini nostri Iesu Christi (Segundo Mistério Doloroso: Flagelação de Jesus)',
-					html: '«Então lhes soltou Barrabás; mas a Jesus mandou açoitar, e o entregou para ser crucificado» (Mt 27,26).',
+					title: 'Jesu flagellatio (Jesus flagelado)',
+					html: '«Então soltou-lhes Barrabás. Quanto a Jesus, depois de o ter mandado flagelar, entregou-lho para ser crucificado.» (Mt 27,26).',
 					showCancelButton: false,
 					confirmButtonColor: '#3085d6',
 					confirmButtonText: 'Prosseguir'
 				}).then((result) => {
 					if (result.isConfirmed) {
 						Swal.fire({
-							title: 'Tertium mystérium dolorósum: Coronatiónem spinis Dómini nostri Iesu Christi (Terceiro Mistério Doloroso: Coroação de Espinhos)',
-							html: '«Os soldados do governador conduziram Jesus para o pretório e rodearam-no com todo o pelotão. Arrancaram-lhe as vestes e colocaram-lhe um manto escarlate. Depois, trançaram uma coroa de espinhos, meteram-lha na cabeça e puseram-lhe na mão uma vara. Dobrando os joelhos diante dele, diziam com escárnio: "Salve, rei dos judeus!"» (Mt 27, 27-29).',
+							title: 'Jesu coronatio spinis (Jesus coroado de espinhos)',
+							html: '«Então os soldados do governador, conduzindo Jesus ao Pretório, juntaram em volta dele toda a coorte. Depois de o terem despido, lançaram sobre ele um manto carmezim. Em seguida, tecendo uma coroa de espinhos, puseram-lha sobre a cabeça, e na mão direita uma cana. E, dobrando o joelho diante dele, o escarneciam, dizendo: "Salve, ó rei dos Judeus."» (Mt 27, 27-29).',
 							showCancelButton: false,
 							confirmButtonColor: '#3085d6',
 							confirmButtonText: 'Prosseguir'
 						}).then((result) => {
 							if (result.isConfirmed) {
 								Swal.fire({
-									title: 'Quartum mystérium dolorósum: Bajulatiónem Crucis (Quarto Mistério Doloroso: Jesus carregando a cruz no caminho do Calvário)',
-									html: '«Passava por ali certo homem de Cirene, chamado Simão, que vinha do campo, pai de Alexandre e de Rufo, e obrigaram-no a que lhe levasse a cruz. Conduziram Jesus ao lugar chamado Gólgota, que quer dizer lugar do crânio» (Mc 15, 21-22).',
+									title: 'Jesus baiulat sibi crucem (Jesus carrega sua cruz)',
+									html: '«Obrigarem um certo homem que a a passar, Simão de Cirene, que vinha do campo, pai de Alexandre e de Rufo, a levar a cruz. Conduziram-no ao lugar do Gólgota, que quer dizer lugar do Crânio.» (Mc 15, 21-22).',
 									showCancelButton: false,
 									confirmButtonColor: '#3085d6',
 									confirmButtonText: 'Prosseguir'
 								}).then((result) => {
 									if (result.isConfirmed) {
 										Swal.fire({
-											title: 'Quintum mystérium dolorósum: Crucifixiónem Dómini nostri Iesu Christi (Quinto Mistério Doloroso: Crucifixão e morte de Jesus)',
-											html: '«Chegados que foram ao lugar chamado Calvário, ali o crucificaram, como também os ladrões, um à direita e outro à esquerda. E Jesus dizia: "Pai, perdoa-lhes; porque não sabem o que fazem"...<br>Era quase à hora sexta e em toda a terra houve trevas até a hora nona. Escureceu-se o sol e o véu do templo rasgou-se pelo meio. Jesus deu então um grande brado e disse: "Pai, nas tuas mãos entrego o meu espírito". E, dizendo isso, expirou» (Lc  23, 33-46).',
+											title: 'Domini Nostri Jesu Christi crucifixio et mors (Nosso Senhor Jesus Cristo é crucificado e morre)',
+											html: '«Quando chegaram ao lugar que se chama Calvário, ali o crucificaram a ele e aos ladrões, um à direita e outro à esquerda. Jesus dizia: "Pai, perdoa-lhes, porque não sabem o que fazem ." Dividindo os seus vestidos, sortearam-nos (S. 21,19). O povo estava observando. Os príncipes dos sacerdotes ( com o povo ) o escarneciam, dizendo: "Salvou os outros, salve-se a si mesmo, se é o Cristo, o escolhido de Deus." Insultavam-no também os soldados, os quais, aproximando-se dele e oferecendo-lhe vinagre, diziam : "Se és o rei dos Judeus, salva-te a ti mesmo." Estava também por cima da sua cabeça uma inscrição : Este é o rei dos Judeus. Um daqueles ladrões, que estavam pendurados, blasfemava contra ele, dizendo: "Se és o Cristo, salva-te a ti mesmo e a nós." O outro, porém, tomando a palavra, repreendia-o, dizendo: "Nem tu temes a Deus, estando no mesmo suplício?" O outro, porém, tomando a palavra, repreendia-o, dizendo: "Nem tu temes a Deus, estando no mesmo suplício?" Nós estamos na verdade justamente, porque recebemos o castigo que merecem as nossas acções, mas este não fez nenhum mal. E dizia a Jesus: "Senhor, lembra-te de mim, quando entrares no teu reino." Jesus disse-lhe: "Em verdade te digo: Hoje estarás comigo no paraíso." Era então quase a hora, sexta, e toda a terra ficou coberta de trevas até à hora nona; escureceu-se o sol, e rasgou-se pelo meio o véu do templo. Jesus, exclamando em alta voz, disse: "Pai, nas tuas mãos encomendo o meu espírito (S. 30,6)." Dizendo isto, expirou.» (Lc  23, 33-46).',
 											showCancelButton: false,
 											confirmButtonColor: '#d33',
 											confirmButtonText: 'Fechar'
@@ -137,7 +137,7 @@ const ROSARIO = {
 	},
 	infoMisGloriosos() {
 		Swal.fire({
-			title: 'Prímum mystérium gloriósum: Resurrectiónem Dómini nostri Iesu Christi a mórtuis (Primeiro Mistério Glorioso: Ressurreição de Jesus)',
+			title: 'Resurrectio Jesu Christi (Ressurreição de Jesus Cristo)',
 			html: '«No primeiro dia da semana, muito cedo, dirigiram-se ao sepulcro com os aromas que haviam preparado. Acharam a pedra removida longe da abertura do sepulcro. Entraram, mas não encontraram o corpo do Senhor Jesus. Não sabiam elas o que pensar, quando apareceram em frente delas dois personagens com vestes resplandecentes. Como estivessem amedrontadas e voltassem o rosto para o chão, disseram-lhes eles: "Por que buscais entre os mortos aquele que está vivo? Não está aqui, mas ressuscitou"» (Lc 24, 1-6).',
 			showCancelButton: false,
 			confirmButtonColor: '#3085d6',
@@ -145,7 +145,7 @@ const ROSARIO = {
 		}).then((result) => {
 			if (result.isConfirmed) {
 				Swal.fire({
-					title: 'Secúndum mystérium gloriósum: Ascensiónem Dómini nostri Iesu Christi in cáelum (Segundo Mistério Glorioso: Ascensão de Jesus ao Céu)',
+					title: 'Ascensio Jesu Christi (Ascensão de Jesus Cristo)',
 					html: '«Depois que o Senhor Jesus lhes falou, foi levado ao céu e está sentado à direita de Deus» (Mc 16, 19).',
 					showCancelButton: false,
 					confirmButtonColor: '#3085d6',
@@ -153,7 +153,7 @@ const ROSARIO = {
 				}).then((result) => {
 					if (result.isConfirmed) {
 						Swal.fire({
-							title: 'Tértium mystérium gloriósum: Missiónem Spíritus Sancti in discípulos (Terceiro Mistério Glorioso: Vinda do Espírito Santo sobre os Apóstolos)',
+							title: 'Descensio Spiritus Sancti (Descida do Espírito Santo)',
 							html: '«Chegando o dia de Pentecostes, estavam todos reunidos no mesmo lugar. De repente, veio do céu um ruído, como se soprasse um vento impetuoso, e encheu toda a casa onde estavam sentados. Apareceu-lhes então uma espécie de línguas de fogo que se repartiram e pousaram sobre cada um deles. Ficaram todos cheios do Espírito Santo e começaram a falar em línguas, conforme o Espírito Santo lhes concedia que falassem» (At 2, 1-4).',
 							showCancelButton: false,
 							confirmButtonColor: '#3085d6',
@@ -161,7 +161,7 @@ const ROSARIO = {
 						}).then((result) => {
 							if (result.isConfirmed) {
 								Swal.fire({
-									title: 'Quartum mystérium gloriósum: Assumptiónem Beátæ Maríæ Vírginis in cáelum (Quarto Mistério Glorioso: Assunção de Maria)',
+									title: 'Assumptio Mariae (Assunção de Maria)',
 									html: '«Por isto, desde agora, me proclamarão bem-aventurada todas as gerações, porque realizou em mim maravilhas aquele que é poderoso e cujo nome é Santo» (Lc 1, 48-49).',
 									showCancelButton: false,
 									confirmButtonColor: '#3085d6',
@@ -169,7 +169,7 @@ const ROSARIO = {
 								}).then((result) => {
 									if (result.isConfirmed) {
 										Swal.fire({
-											title: 'Quintum mystérium gloriósum: Coronatiónem Beátæ Maríæ Vírginis in cáelum (Quinto Mistério Glorioso: Coroação de Maria no Céu)',
+											title: 'Coronatio Dominae Nostrae Beatae Virginis Mariae (Coroação de Nossa Senhora Bem Aventurada Virgem Maria)',
 											html: '«Apareceu em seguida um grande sinal no céu: uma Mulher revestida do sol, a lua debaixo dos seus pés e na cabeça uma coroa de doze estrelas» (Ap 12, 1).',
 											showCancelButton: false,
 											confirmButtonColor: '#d33',
@@ -229,7 +229,7 @@ const ROSARIO = {
 	},
 	credo(lingua) {
 		if (lingua === 'latim') {
-			string = "Crédo in Déum Pátrem omnipoténtem,<br>Creatórem cáeli et térræ.<br>Et in Iésum Chrístum, Fílium éius unícum, Dóminum nóstrum:<br>qui concéptus est de Spíritu Sáncto,<br>nátus ex María Vírgine,<br>pássus sub Póntio Piláto,<br>crucifíxus, mórtuus, et sepúltus:<br>descéndit ad ínfernos:<br>tértia die resurréxit a mórtuis:<br>ascéndit ad cáelos:<br>sédet ad déxteram Déi Pátris omnipoténtis:<br>índe ventúrus est iudicáre vívos et mórtuos.<br>Crédo in Spíritum Sánctum,<br>sánctam Ecclésiam Cathólicam,<br>Sanctórum Communiónem,<br>remissiónem peccatórum,<br>cárnis resurrectiónem,<br>vítam ætérnam.<br>Amen." + this.buttonPronuncia('credo');
+			string = "Credo in Déum Patrem omnipoténtem,<br>Creatórem cáeli et térræ.<br>Et in Iésum Chrístum, Fílium éius unícum, Dóminum nóstrum:<br>qui concéptus est de Spíritu Sáncto,<br>nátus ex María Vírgine,<br>pássus sub Póntio Piláto,<br>crucifíxus, mórtuus, et sepúltus:<br>descéndit ad ínfernos:<br>tértia die resurréxit a mórtuis:<br>ascéndit ad cáelos:<br>sédet ad déxteram Déi Pátris omnipoténtis:<br>índe ventúrus est iudicáre vívos et mórtuos.<br>Crédo in Spíritum Sánctum,<br>sánctam Ecclésiam Cathólicam,<br>Sanctórum Communiónem,<br>remissiónem peccatórum,<br>cárnis resurrectiónem,<br>vítam ætérnam.<br>Amen." + this.buttonPronuncia('credo');
 		} else {
 			string = "Creio em Deus Pai Todo-Poderoso,<br>criador do céu e da terra.<br>E em Jesus Cristo, seu único Filho Nosso Senhor,<br>o qual foi concebido pelo poder do Espírito Santo,<br>nasceu de Maria Virgem,<br>padeceu sob Pôncio Pilatus,<br>foi crucificado, morto e sepultado,<br>desceu aos infernos,<br>ao terceiro dia ressurgiu dos mortos,<br>subiu ao Céu, está sentado à direita de Deus Pai todo-poderoso,<br>de onde há de vir a julgar os vivos e mortos.<br>Creio no Espírito Santo.<br>Na Santa Igreja Católica,<br>na comunhão dos santos,<br>na remissão dos pecados,<br>na ressurreição da carne,<br>na vida eterna.<br>Amém.";
 		}
@@ -237,7 +237,7 @@ const ROSARIO = {
 	},
 	paiNosso(lingua) {
 		if (lingua === 'latim') {
-			string = "Páter Nóster,<br>Qui es in cáelis,<br>sanctificétur nómen túum.<br>Advéniat régnum túum,<br>fíat volúntus túa,<br>sícut in cáelo et in térra.<br>Pánem nóstrum quotidiánum da nóbis hódie,<br>et dimítte nóbis débita nóstra,<br>sícut et nos dimíttimus debitóribus nóstris.<br>Et ne nos indúcas in tentatiónem:<br>sed líbera nos a málo.<br>Amen." + this.buttonPronuncia('pater_noster');
+			string = "Pater Nóster,<br>Qui es in caelis,<br>sanctificetur nómen ttum.<br>Advéniat regnum tuum,<br>fiat volúntus tua,<br>sicut in caelo et in terra.<br>Panem nostrum quotidianum da nobis hodie,<br>et dimitte nobis debita nostra,<br>sicut et nos dimittimus debitoribus nostris.<br>Et ne nos indúcas in tentationem:<br>sed libera nos a malo.<br>Amen." + this.buttonPronuncia('pater_noster');
 		} else {
 			string = "Pai Nosso que estais no céu,<br>Santificado seja o vosso nome.<br>Venha a nós o vosso reino.<br>Seja feita a vossa vontade, assim na terra como no Céu.<br>O pão nosso de cada dia nos dai hoje.<br>Perdoai-nos as nossas dívidas assim como nós perdoamos aos nossos devedores.<br>E não nos deixeis cair em tentação.<br>Mas livrai-nos do mal.<br>Amém.";
 		}
@@ -253,7 +253,7 @@ const ROSARIO = {
 	},
 	aveMaria(lingua) {
 		if (lingua === 'latim') {
-			string = "Áve María, grátia pléna, Dóminus técum.<br>Benedícta tu in muliéribus, et benedíctus frúctus véntris túi, Iésus.<br>Sáncta María, Máter Déi, óra pro nóbis peccatóribus, nunc, et in hóra mórtis nóstræ.<br>Amen." + this.buttonPronuncia('ave_maria');
+			string = "Ave Maria, grátia pléna, Dóminus técum.<br>Benedícta tu in muliéribus, et benedíctus frúctus véntris túi, Iésus.<br>Sáncta María, Máter Déi, óra pro nóbis peccatóribus, nunc, et in hóra mórtis nóstræ.<br>Amen." + this.buttonPronuncia('ave_maria');
 		} else {
 			string = "Ave Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus. <br>Santa Maria, Mãe de Deus, rogai por nós pecadores, agora e na hora da nossa morte.<br>Ámen.";
 		}
