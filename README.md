@@ -4,7 +4,7 @@ Salve Maria!
 
 Este é um site que fiz para ajudar as pessoas a rezar o Rosário da forma tradicional. Nele estão as orações e os mistérios.
 
-Usei de base o site do <a href="https://www.vatican.va/special/rosary/documents/misteri_po.html" target="_blank">Vaticano</a>, o site <a href="https://traditionalcatholicprayers.com/2019/11/12/how-to-pray-the-rosary-in-latin/" target="_blank">Traditional Catholic Prayers</a> e o site da <a href="https://www.montfort.org.br/bra/oracoes/oracoes/o_rosario/" target="_blank">Montfort</a>.
+Peguei informações no site da <a href="https://www.montfort.org.br/bra/oracoes/oracoes/o_rosario/" target="_blank">Montfort</a> e gravuras no <a href="https://www.verbumgloriae.es/" target="_blank">Verbum Gloriae.</a>
 
 ## Como usar?
 É muito simples! Basta usar os botões com as informações para descobrir como o Rosário é rezado e uma imagem explicativa, e depois, rolando, você encontrará como pronunciar latim, algumas orações que São Luís Maria Grignion de Montfort recomenda, e as orações do Rosário, em português e latim. As versões em latim tem um botão para tocar a pronúncia.
@@ -24,6 +24,9 @@ O Rosário ajuda na meditação da vida de Cristo, é um meio de pedir graças p
 
 > O Rosário é a mais bela e a mais preciosa de todas as orações à Medianeira de todas as graças: é a prece que mais toca o coração da Mãe de Deus. Rezai-o todos os dias.
 <br>— São Pio X
+
+## Anúncios
+Pretendo colocar anúncios (evidentemente, não abusivos), e usar a receita gerada para doações.
 
 ## Como posso ajudar?
 Você pode compartilhar o site para que ele possa ser útil para mais pessoas, ou abrir um *issue* aqui no *Github* caso encontre algo faltando ou algum erro!
