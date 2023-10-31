@@ -39,7 +39,7 @@ const ROSARIO = {
 	},
 	infoMisGozosos() {
 		Swal.fire({
-			title: 'Annuntiatio Beatae Virgini Mariae (Anunciação a Bem Aventurada Virgem Maria)',
+			title: 'Annuntiatio Beatæ Virgini Mariæ (Anunciação a Bem Aventurada Virgem Maria)',
 			html: '«Estando Isabel no sexto mês, foi enviado por Deus o anjo Gabriel a uma cidade da Galileia, chamada Nazaré, a uma virgem desposada com um varão, chamado José, da casa de David; o nome da virgem era Maria.» (Lc 1, 26-27).',
 			showCancelButton: false,
 			confirmButtonColor: '#3085d6',
@@ -47,7 +47,7 @@ const ROSARIO = {
 		}).then((result) => {
 			if (result.isConfirmed) {
 				Swal.fire({
-					title: 'Visitatio Beatae Virginis Mariae (Visitação da Bem Aventurada Virgem Maria)',
+					title: 'Visitatio Beatæ Virginis Mariæ (Visitação da Bem Aventurada Virgem Maria)',
 					html: '«Naqueles dias, levantando-se Maria, foi com pressa às montanhas, a uma cidade de Judá. Entrou em casa de Zacarias, e saudou Isabel. Aconteceu que, apenas Isabel ouviu a saudação de Maria, o menino saltou no seu ventre, e Isabel ficou cheia do Espírito Santo; e exclamou em alta voz: "Bendita és tu entre todas as mulheres, e bendito é o fruto do teu ventre."» (Lc 1, 39-42).',
 					showCancelButton: false,
 					confirmButtonColor: '#3085d6',
@@ -63,7 +63,7 @@ const ROSARIO = {
 						}).then((result) => {
 							if (result.isConfirmed) {
 								Swal.fire({
-									title: 'Praesentatio Jesu et Purificatio Mariae (Apresentação de Jesus e Purificação de Maria)',
+									title: 'Præsentatio Jesu et Purificatio Mariæ (Apresentação de Jesus e Purificação de Maria)',
 									html: '«Depois que se completaram os oito dias para ser circuncidado o Menino, foi-lhe posto o nome de Jesus, como lhe tinha chamado o anjo, antes que fosse concebido no ventre materno. Depois que se completaram os dias da purificação de Maria, segundo a lei de Moisés, levaram-no a Jerusalém para o apresentar ao Senhor, segundo o que está escrito na lei do Senhor : Todo o varão primogênito será consagrado ao Senhor, e para oferecerem em sacrifício, conforme o que também está escrito na lei do Senhor, um par de rolas ou dois pombinhos.» (Lc 2, 21-24).',
 									showCancelButton: false,
 									confirmButtonColor: '#3085d6',
@@ -138,7 +138,7 @@ const ROSARIO = {
 	infoMisGloriosos() {
 		Swal.fire({
 			title: 'Resurrectio Jesu Christi (Ressurreição de Jesus Cristo)',
-			html: '«No primeiro dia da semana, muito cedo, dirigiram-se ao sepulcro com os aromas que haviam preparado. Acharam a pedra removida longe da abertura do sepulcro. Entraram, mas não encontraram o corpo do Senhor Jesus. Não sabiam elas o que pensar, quando apareceram em frente delas dois personagens com vestes resplandecentes. Como estivessem amedrontadas e voltassem o rosto para o chão, disseram-lhes eles: "Por que buscais entre os mortos aquele que está vivo? Não está aqui, mas ressuscitou"» (Lc 24, 1-6).',
+			html: '«No primeiro dia da semana, foram muito cedo ao sepulcro, levando os aromas que tinham preparado. Encontraram revolvida a pedra do sepulcro, Entrando, não encontraram o corpo do Senhor Jesus. Aconteceu que, estando consternadas por isso, eis que apareceram junto delas dois homens com vestidos resplandecentes. Estando elas medrosas e com os olhos no chão, disseram-lhes: "Porque buscais entre os mortos o que está vivo? Ele não está aqui, ressuscitou. Lembrai-vos do que ele vos disse, quando estava na Galileia: Importa que o Filho do homem seja entregue nas mãos de homens pecadores, seja crucificado, ressuscite ao terceiro dia."» (Lc 24, 1-7).',
 			showCancelButton: false,
 			confirmButtonColor: '#3085d6',
 			confirmButtonText: 'Prosseguir'
@@ -146,7 +146,7 @@ const ROSARIO = {
 			if (result.isConfirmed) {
 				Swal.fire({
 					title: 'Ascensio Jesu Christi (Ascensão de Jesus Cristo)',
-					html: '«Depois que o Senhor Jesus lhes falou, foi levado ao céu e está sentado à direita de Deus» (Mc 16, 19).',
+					html: '«O Senhor, depois que assim lhes falou, elevou-se ao céu, e foi sentar-se à direita de Deus.» (Mc 16, 19).',
 					showCancelButton: false,
 					confirmButtonColor: '#3085d6',
 					confirmButtonText: 'Prosseguir'
@@ -154,23 +154,23 @@ const ROSARIO = {
 					if (result.isConfirmed) {
 						Swal.fire({
 							title: 'Descensio Spiritus Sancti (Descida do Espírito Santo)',
-							html: '«Chegando o dia de Pentecostes, estavam todos reunidos no mesmo lugar. De repente, veio do céu um ruído, como se soprasse um vento impetuoso, e encheu toda a casa onde estavam sentados. Apareceu-lhes então uma espécie de línguas de fogo que se repartiram e pousaram sobre cada um deles. Ficaram todos cheios do Espírito Santo e começaram a falar em línguas, conforme o Espírito Santo lhes concedia que falassem» (At 2, 1-4).',
+							html: '«Quando se completaram os dias do Pentecostes, estavam todos juntos no mesmo lugar. De repente, veio do céu um estrondo, como de vento que soprava impetuoso, que encheu toda a casa onde estavam sentados. E apareceram-lhes repartidas umas como línguas de fogo, das quais pousou uma sobre cada um deles. Ficaram todos cheios do Espirito Santo e começaram a falar várias línguas, conforme o Espírito Santo lhes concedia que falassem.» (At 2, 1-4).',
 							showCancelButton: false,
 							confirmButtonColor: '#3085d6',
 							confirmButtonText: 'Prosseguir'
 						}).then((result) => {
 							if (result.isConfirmed) {
 								Swal.fire({
-									title: 'Assumptio Mariae (Assunção de Maria)',
-									html: '«Por isto, desde agora, me proclamarão bem-aventurada todas as gerações, porque realizou em mim maravilhas aquele que é poderoso e cujo nome é Santo» (Lc 1, 48-49).',
+									title: 'Assumptio Mariæ (Assunção de Maria)',
+									html: '«Porque lançou os olhos para a baixeza da sua serva. Portanto, eis que, de hoje em diante, todas as gerações me chamarão bem-aventurada.	Porque o Todo-poderoso fez em mim grandes coisas, o seu nome é santo.» (Lc 1, 48-49).',
 									showCancelButton: false,
 									confirmButtonColor: '#3085d6',
 									confirmButtonText: 'Prosseguir'
 								}).then((result) => {
 									if (result.isConfirmed) {
 										Swal.fire({
-											title: 'Coronatio Dominae Nostrae Beatae Virginis Mariae (Coroação de Nossa Senhora Bem Aventurada Virgem Maria)',
-											html: '«Apareceu em seguida um grande sinal no céu: uma Mulher revestida do sol, a lua debaixo dos seus pés e na cabeça uma coroa de doze estrelas» (Ap 12, 1).',
+											title: 'Coronatio Dominæ Nostræ Beatæ Virginis Mariæ (Coroação de Nossa Senhora Bem Aventurada Virgem Maria)',
+											html: '«Depois apareceu no céu um grande sinal: uma Mulher vestida de sol, com a lua debaixo de seus pés, e uma coroa de doze estrelas sobre a sua cabeça.» (Ap 12, 1).',
 											showCancelButton: false,
 											confirmButtonColor: '#d33',
 											confirmButtonText: 'Fechar'
@@ -196,7 +196,7 @@ const ROSARIO = {
 		this.audio.play();
 	},
 	pronunciaLatim() {
-		string = "A pronúncia do latim eclesiástico é, basicamente, uma pronúncia italiana.<br>Quando o C é seguido de um I ou um E, ele é pronunciado como se houvesse um H. Exemplo: Crucifíxus é pronunciado Cruchifíxus.<br>Os ditongos ae e oe são pronunciados somente como um e aberto. Exemplo: Cáelum é pronunciado Chelum.<br>O G é pronunciado como dj. Exemplo: Regina é pronunciada como Redjina.<br> O ditongo ti é pronunciado como ci (sem o h). Exemplo: Tentatiónem é pronunciada como tentaciónem.";
+		string = "A pronúncia do latim eclesiástico é, basicamente, uma pronúncia italiana.<br>Quando o C é seguido de um I ou um E, ele é pronunciado como se houvesse um H. Exemplo: Crucifíxus é pronunciado Cruchifíxus.<br>Os ditongos æ e oe são pronunciados somente como um e aberto. Exemplo: Cáelum é pronunciado Chelum.<br>O G é pronunciado como dj. Exemplo: Regina é pronunciada como Redjina.<br> O ditongo ti é pronunciado como ci (sem o h). Exemplo: Tentatiónem é pronunciada como tentaciónem.";
 		Swal.fire('Como pronunciar o latim', string);
 	},
 	oferecimentoTerco() {
@@ -237,7 +237,7 @@ const ROSARIO = {
 	},
 	paiNosso(lingua) {
 		if (lingua === 'latim') {
-			string = "Pater Nóster,<br>Qui es in caelis,<br>sanctificetur nómen ttum.<br>Advéniat regnum tuum,<br>fiat volúntus tua,<br>sicut in caelo et in terra.<br>Panem nostrum quotidianum da nobis hodie,<br>et dimitte nobis debita nostra,<br>sicut et nos dimittimus debitoribus nostris.<br>Et ne nos indúcas in tentationem:<br>sed libera nos a malo.<br>Amen." + this.buttonPronuncia('pater_noster');
+			string = "Pater Nóster,<br>Qui es in cælis,<br>sanctificetur nómen ttum.<br>Advéniat regnum tuum,<br>fiat volúntus tua,<br>sicut in cælo et in terra.<br>Panem nostrum quotidianum da nobis hodie,<br>et dimitte nobis debita nostra,<br>sicut et nos dimittimus debitoribus nostris.<br>Et ne nos indúcas in tentationem:<br>sed libera nos a malo.<br>Amen." + this.buttonPronuncia('pater_noster');
 		} else {
 			string = "Pai Nosso que estais no céu,<br>Santificado seja o vosso nome.<br>Venha a nós o vosso reino.<br>Seja feita a vossa vontade, assim na terra como no Céu.<br>O pão nosso de cada dia nos dai hoje.<br>Perdoai-nos as nossas dívidas assim como nós perdoamos aos nossos devedores.<br>E não nos deixeis cair em tentação.<br>Mas livrai-nos do mal.<br>Amém.";
 		}
@@ -245,7 +245,7 @@ const ROSARIO = {
 	},
 	gloria(lingua) {
 		if (lingua === 'latim') {
-			string = "Glória Pátri, et Fílio, et Spirítui Sáncto. Sícut érat in princípio, et nunc, et sémper, et in sáecula sæculórum. Amen.<br>O (mi) Bóne Iésu, líbera nos a peccatís nóstris; líbera nos ab ígnibus gehénnae; perdúc in paradísum ómnes animás præsértim eas quae plus misericórdia tua indígent!" + this.buttonPronuncia('gloria');
+			string = "Glória Pátri, et Fílio, et Spirítui Sáncto. Sícut érat in princípio, et nunc, et sémper, et in sáecula sæculórum. Amen.<br>O (mi) Bóne Iésu, líbera nos a peccatís nóstris; líbera nos ab ígnibus gehénnæ; perdúc in paradísum ómnes animás præsértim eas quæ plus misericórdia tua indígent!" + this.buttonPronuncia('gloria');
 		} else {
 			string = "Gloria ao Pai, ao Filho e ao Espírito Santo, assim como era no princípio, agora e sempre e por todos os séculos dos séculos, Amém.<br>Ó Meu Jesus perdoai-nos, livrai-nos do fogo do inferno, levai as almas todas para o céu, principalmente as que mais precisarem.";
 		}
@@ -261,7 +261,7 @@ const ROSARIO = {
 	},
 	salveRainha(lingua) {
 		if (lingua === 'latim') {
-			string = "Sálve Regína, Máter misericórdiæ!<br>Víta, dulcédo, et spes nóstra, sálve.<br>Ad te clamámus, éxsules filii Hévæ.<br>Ad te suspirámus,<br>geméntes et fléntes in hac lacrimárum válle.<br>Éia érgo, Advocáta nóstra,<br>íllos túos misericórdes óculos ad nos convérte.<br>Et Iésum, benedíctum frúctum véntris túi,<br>nóbis post hoc exsílium osténde.<br>O clémens, O pía, O dúlcis Vírgo María!<br>℣. Óra pro nóbis, Sáncta Déi Génetrix.<br>℟. Ut dígni efficiámur promissiónibus Chrísti.<br>Amen." + this.buttonPronuncia('salve_regina');
+			string = "Salve Regina, Máter misericórdiæ!<br>Víta, dulcédo, et spes nóstra, sálve.<br>Ad te clamámus, éxsules filii Hévæ.<br>Ad te suspirámus,<br>geméntes et fléntes in hac lacrimárum válle.<br>Éia érgo, Advocáta nóstra,<br>íllos túos misericórdes óculos ad nos convérte.<br>Et Iésum, benedíctum frúctum véntris túi,<br>nóbis post hoc exsílium osténde.<br>O clémens, O pía, O dúlcis Vírgo María!<br>℣. Óra pro nóbis, Sáncta Déi Génetrix.<br>℟. Ut dígni efficiámur promissiónibus Chrísti.<br>Amen." + this.buttonPronuncia('salve_regina');
 		} else {
 			string = "Salve Rainha, Mãe de misericórdia,<br>vida, doçura e esperança nossa, Salve!<br>A vós bradamos os degredados filhos de Eva.<br>A vós suspiramos, gemendo e chorando neste vale de lágrimas.<br>Eia pois advogada nossa, esses vossos olhos misericordiosos a nós volvei.<br>E depois deste desterro, mostrai-nos Jesus, bendito fruto de vosso ventre.<br>Ó clemente! Ó piedosa! Ó doce sempre Virgem Maria!<br>℣. Rogai por nós Santa Mãe de Deus.<br>℟. Para que sejamos dignos das promessas de Cristo.<br>Amém.";
 		}
