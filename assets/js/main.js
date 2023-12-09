@@ -203,8 +203,12 @@ const ROSARIO = {
 		string = "Uno-me a todos os santos que estão no Céu, a todos os justos que estão sobre a Terra, a todas as almas fiéis que estão neste lugar. Uno-me a Vós, meu Jesus, para louvar dignamente Vossa Santa Mãe, e louvar-Vos a Vós, nela e por Ela. Renuncio a todas as distrações que me vierem durante este Rosário, que quero recitar com modéstia, atenção e devoção, como se fosse o último da minha vida.<br>Nós Vos oferecemos, Trindade Santíssima, este Credo, para honrar os mistérios todos de nossa Fé; este Pater (Pai Nosso) e estas três Ave-Marias, para honrar a unidade de vossa essência e a trindade de vossas pessoas. Pedimo-Vos uma fé viva, uma esperança firme e uma caridade ardente. Assim seja.";
 		Swal.fire('Oferecimento do terço', string);
 	},
-	oferecimentoTercoDominicano() {
-		string = "<i class=\"text-danger\">Fazendo o sinal da cruz:</i><br>In nómine Pátris, <span class=\"text-danger\">+</span> et Fílii, et Spíritus Sáncti. Amen.<br><br><span class=\"text-danger\">V:</span> Ave Maria, grátia plena: Dóminus tecum.<br><span class=\"text-danger\">R:</span> Benedicta tu in mulieribus, et benedictus fructus ventris tui, lesus.<br><br><i class=\"text-danger\">Depois, traçando uma cruz sob seus lábios com o polegar direito:</i><br><span class=\"text-danger\">V:</span> Dómine, <span class=\"text-danger\">+</span> lábia mea apéries.<br><span class=\"text-danger\">R:</span> Et os meum annuntiabit laudem tuam.<br><br><i class=\"text-danger\">Fazendo o sinal da cruz:</i><br><span class=\"text-danger\">V:</span> Deus, <span class=\"text-danger\">+</span> in adiutorium meum inténde.<br><span class=\"text-danger\">R:</span> Dómine, ad adiuvándum me festína.<br><br><i class=\"text-danger\">Curvando-se profundamente:</i><br><span class=\"text-danger\">V:</span> Glória Patri, et Filio, et Spirítui Sancto.<br><span class=\"text-danger\">R:</span> Sicut erat in princípio, et nunc, et semper, et in sæcula sæculórum.<br>Amen. (Alleluia.<span class=\"text-danger\">*</span>)<br><br><i class=\"text-danger\">*Da Septuagésima até a Páscoa, ao invés de \"Alleluia\", diga:</i><br>Laus tibi, Dómine, Rex ætérnæ glóriæ.";
+	oferecimentoTercoDominicano(lingua) {
+		if (lingua === 'latim') {
+			string = "<i class=\"text-danger\">Fazendo o sinal da cruz:</i><br>In nómine Pátris, <span class=\"text-danger\">+</span> et Fílii, et Spíritus Sáncti. Amen.<br><br><span class=\"text-danger\">V:</span> Ave Maria, grátia plena: Dóminus tecum.<br><span class=\"text-danger\">R:</span> Benedicta tu in mulieribus, et benedictus fructus ventris tui, lesus.<br><br><i class=\"text-danger\">Depois, traçando uma cruz sob seus lábios com o polegar direito:</i><br><span class=\"text-danger\">V:</span> Dómine, <span class=\"text-danger\">+</span> lábia mea apéries.<br><span class=\"text-danger\">R:</span> Et os meum annuntiabit laudem tuam.<br><br><i class=\"text-danger\">Fazendo o sinal da cruz:</i><br><span class=\"text-danger\">V:</span> Deus, <span class=\"text-danger\">+</span> in adiutorium meum inténde.<br><span class=\"text-danger\">R:</span> Dómine, ad adiuvándum me festína.<br><br><i class=\"text-danger\">Curvando-se profundamente:</i><br><span class=\"text-danger\">V:</span> Glória Patri, et Filio, et Spirítui Sancto.<br><span class=\"text-danger\">R:</span> Sicut erat in princípio, et nunc, et semper, et in sæcula sæculórum.<br>Amen. (Alleluia.<span class=\"text-danger\">*</span>)<br><br><i class=\"text-danger\">*Da Septuagésima até a Páscoa, ao invés de \"Alleluia\", diga:</i><br>Laus tibi, Dómine, Rex ætérnæ glóriæ.";
+		} else {
+			string = "<i class=\"text-danger\">Fazendo o sinal da cruz:</i><br>Em nome do Pai, <span class=\"text-danger\">+</span> e do Filho, e do Espírito Santo. Amém.<br><br><span class=\"text-danger\">V:</span> Ave Maria, cheia de graça: o Senhor é convosco.<br><span class=\"text-danger\">R:</span> Bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus.<br><br><i class=\"text-danger\">Depois, traçando uma cruz sob seus lábios com o polegar direito:</i><br><span class=\"text-danger\">V:</span> Abri, Senhor, <span class=\"text-danger\">+</span> os meus lábios.<br><span class=\"text-danger\">R:</span> E a minha boca anunciará o vosso louvor.<br><br><i class=\"text-danger\">Fazendo o sinal da cruz:</i><br><span class=\"text-danger\">V:</span> Deus, <span class=\"text-danger\">+</span> vinde em meu auxílio.<br><span class=\"text-danger\">R:</span> Senhor, apressai-Vos em socorrer-me.<br><br><i class=\"text-danger\">Curvando-se profundamente:</i><br><span class=\"text-danger\">V:</span> Glória ao Pai, e ao Filho e ao Espírito Santo.<br><span class=\"text-danger\">R:</span> Assim como era no princípio, agora e sempre, e por todos os séculos dos séculos. Amém.<br> Amém. (Alleluia.<span class=\"text-danger\">*</span>)<br><br><i class=\"text-danger\">*Da Septuagésima até a Páscoa, ao invés de \"Alleluia\", diga:</i><br>Louvado sejais, ó Senhor, Rei da glória eterna.";
+		}
 		Swal.fire('Oferecimento do terço (dominicano)', string);
 	},
 	primeirasAveMarias() {
@@ -225,9 +229,9 @@ const ROSARIO = {
 	},
 	sinalDaCruz(lingua) {
 		if (lingua === 'latim') {
-			string = "In nómine Pátris, et Fílii, et Spíritus Sáncti. Amen." + this.buttonPronuncia('signum_crucis');
+			string = "In nómine Pátris <span class=\"text-danger\">+</span>, et Fílii, et Spíritus Sáncti. Amen." + this.buttonPronuncia('signum_crucis');
 		} else {
-			string = "Em nome do Pai, do Filho e do Espírito Santo. Amém.";
+			string = "Em nome do Pai <span class=\"text-danger\">+</span>, do Filho e do Espírito Santo. Amém.";
 		}
 		Swal.fire('Sinal da cruz', string);
 	},
@@ -283,7 +287,7 @@ const ROSARIO = {
 		if (lingua === 'latim') {
 			string = "Orémus. Deus, cuius Unigénitus per vitam, mortem et resurrectiónem suam nobis salútis ætérnæ præmia comparávit: concéde, quæsumus; ut, hæc mystéria sacratíssimo beátæ Mariæ Virginis Rosário recoléntes, et imitémur quod cóntinent, et quod promittunt assequámur. Per eúndem Christum Dóminum nostrum. Amen.<br><i class=\"text-danger\">Faça o sinal da cruz.</i>";
 		} else {
-			string = "";
+			string = "Oremos. Deus, cujo Filho Unigênito, por sua vida, morte e ressurreição, nos obteve o prêmio da salvação eterna, concedei-nos, nós Vô-lo pedimos que, meditando estes mistérios do Sacratíssimo Rosário da Bem-Aventurada Virgem Maria, imitemos o que contém e consigamos o que prometem. Pelo mesmo Cristo, Senhor Nosso.<br><i class=\"text-danger\">Faça o sinal da cruz.</i>";
 		}
 		Swal.fire('Coleta final (dominicana)', string);
 	}
