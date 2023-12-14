@@ -32,4 +32,4 @@ Pretendo colocar anúncios (evidentemente, não abusivos), e usar a receita gera
 Você pode compartilhar o site para que ele possa ser útil para mais pessoas, ou abrir um *issue* aqui no *Github* caso encontre algo faltando ou algum erro!<br>
 E claro, pode rezar uma Ave-Maria por mim.
 
-<img src="https://bonavigo.github.io/rosario/assets/img/amdg-anjos.png">
+<p style="text-align: center;"><img src="https://bonavigo.github.io/rosario/assets/img/gravuras/amdg-anjos.png"></p>
