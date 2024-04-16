@@ -1,0 +1,35 @@
+/* Feito com amor e carinho por Bruno Bonavigo em 2022. */
+/* Viva Cristo Rei! Viva Maria Rainha! */
+
+main {
+	width: 100%;
+}
+
+.card-rosario {
+	padding: 1.5em;
+}
+
+.background-white {
+	background-color: #FFF !important;
+}
+
+.btn-doar {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+.icon-heart-navbar {
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
+
+.icon-toast {
+	height: 20px;
+	width: 20px;
+}
+
+.button-play {
+	margin-top: 10px;
+}

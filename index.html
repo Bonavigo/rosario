@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rosário</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/imaculado_coração_de_maria.ico">
+	<meta name="theme-color" content="#4169e1">
+	<meta name="keywords" content="nossa senhora, madonna, deus, rosário, terço, oração, ajuda">
+	<meta property="og:site_name" content="Bruno Bonavigo">
+	<meta property="og:locale" content="pt_BR"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Rosário"/>
+	<meta property="og:description" content="Nossa Senhora oferece ajuda pelo Rosário. Porque não aceitas?"/>
+	<meta property="og:url" content="https://bonavigo.github.io/rosario"/>
+	<meta property="og:image" content="https://bonavigo.github.io/rosario/assets/img/ogimage.png"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">		<link href="https://bonavigo.github.io/assets/css/waves.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/waves.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2499809446169480" crossorigin="anonymous"></script>
+</head>
+<body class="vh-100">
+	<header>
+		<div class="navbar navbar-dark bg-dark shadow-sm">
+			<div class="container">
+				<a href="#" class="navbar-brand d-flex align-items-center">
+					<strong class="d-flex align-items-center">
+						<img src="assets/img/imaculado_coração_de_maria.ico" class="icon-heart-navbar"> Rosário
+					</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+		<div class="collapse bg-dark shadow-sm" id="navbarHeader">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-7 py-4">
+						<h4 class="text-white">Santo Rosário</h4>
+						<p class="text-muted mb-0">Nossa Senhora oferece ajuda pelo Rosário. Porque não aceitas?</p>
+						<p class="text-muted mb-0">Fiz este site para que pessoas novas não fiquem confusas como eu fiquei. Use-o para auxiliá-lo!</p>
+						<p class="text-muted mb-0">Tudo é ensinado da forma tradicional, não a modernista. São 150 Ave-Marias, sem contemplação dos "mistérios luminosos".</p>
+						<p class="text-muted">Viva Cristo Rei! Viva Maria Rainha!</p>
+					</div>
+					<div class="col-sm-4 offset-md-1 py-4">
+						<h4 class="text-white">Contato</h4>
+						<ul class="list-unstyled">
+							<li><a href="https://github.com/Bonavigo" class="text-white" target="_blank">Github</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="py-5 text-center container">
+			<div class="row py-lg-5">
+				<div class="col-lg-6 col-md-8 mx-auto d-flex flex-column align-items-center justify-content-center">
+					<h1 class="fw-light">Rosário</h1>
+					<p class="lead text-muted">O Rosário é uma das melhores formas de pedir ajuda a Deus, afinal, quem melhor recorrer para sua ajuda senão sua Mãe?</p>
+					<p>
+						<button type="button" class="btn btn-primary btn-wave my-2" onclick="ROSARIO.infoRosario()">O que é o Rosário?</button>
+						<button type="button" class="btn btn-secondary btn-wave my-2" onclick="ROSARIO.infoComoRezar()">Como Rezar?</button>
+						<button type="button" class="btn btn-success btn-wave my-2" onclick="ROSARIO.infoDiasTerco()">Dias do Terço</button>
+						<a class="btn btn-dark btn-wave my-2" data-fslightbox="gallery" href="assets/img/mapa_terço.jpg">Mapa do Terço</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<div class="album py-5 bg-light">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/mistérios_gozosos.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Mistérios Gozosos</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.infoMisGozosos()">Ver</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/mistérios_dolorosos.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Mistérios Dolorosos</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.infoMisDolorosos()">Ver</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/mistérios_gloriosos.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Mistérios Gloriosos</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.infoMisGloriosos()">Ver</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="album py-5">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/rosário_céu.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Como pronunciar o latim</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.pronunciaLatim()">Ver</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/nossa_senhora_do_rosario.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Oferecimento do terço</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.oferecimentoTerco()">Ver</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/primeiras_ave_marias.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Três primeiras Ave-Marias</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.primeirasAveMarias()">Ver</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/adoração_dos_reis_magos.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Oferecimento dos Mistérios Gozosos</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.oferecimentoMisteriosGozosos()">Ver</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/nosso_senhor_sendo_retirado_da_cruz.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Oferecimento dos Mistérios Dolorosos</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.oferecimentoMisteriosDolorosos()">Ver</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/ascensão.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Oferecimento dos Mistérios Gloriosos</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.oferecimentoMisteriosGloriosos()">Ver</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="album py-5 bg-light">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/sinal_da_cruz.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Sinal da Cruz</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.sinalDaCruz('português')">Português</button>
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.sinalDaCruz('latim')">Latim</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/são_pio_v_rezando.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Oferecimento do terço (dominicano)</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.oferecimentoTercoDominicano('português')">Português</buon>
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.oferecimentoTercoDominicano('latim')">Latim</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/apostolos.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Credo</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.credo('português')">Português</buon>
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.credo('latim')">Latim</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/jesus_apostolos.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Pai Nosso</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.paiNosso('português')">Português</buon>
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.paiNosso('latim')">Latim</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/ave_maria.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Ave Maria</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.aveMaria('português')">Português</buon>
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.aveMaria('latim')">Latim</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/gloria_ao_pai.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Glória ao Pai e Ó Meu Jesus</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.gloria('português')">Português</buon>
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.gloria('latim')">Latim</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/nossa_senhora_da_conceicao.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Ladainha de Nossa Senhora</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.ladainha('português')">Português</buon>
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.ladainha('latim')">Latim</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/salve_rainha.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Salve Rainha</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.salveRainha('português')">Português</buon>
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.salveRainha('latim')">Latim</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="assets/img/sao_domingos.png" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text">
+									<p class="mb-0">Coleta final (dominicana)</p>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.coletaFinalDominicana('português')">Português</buon>
+										<button type="button" class="btn btn-sm btn-outline-secondary" onclick="ROSARIO.coletaFinalDominicana('latim')">Latim</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="toast-container position-fixed bottom-0 end-0 p-3">
+		<div id="toastInfo" class="toast text-bg-light" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header text-bg-dark">
+				<img src="https://avatars.githubusercontent.com/u/71879062?v=4" class="rounded me-2 icon-toast">
+				<strong class="me-auto">Bruno</strong>
+				<button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				Bem-vindo! Espero que possa ajudá-lo a rezar o Rosário da forma tradicional. Caso queira, <a href="https://github.com/Bonavigo" target="_blank" >este é meu Github</a>.
+			</div>
+		</div>
+	</div>
+	<footer class="text-muted py-5">
+		<div class="container">
+			<p class="float-end mb-1">
+				<a href="#">Leve-me ao topo</a>
+			</p>
+			<p class="mb-1">&copy; Bruno Bonavigo, 2022.</p>
+			<p class="mb-0">Feito usando o tema "Album" do Bootstrap com informações pegas no site da <a href="https://www.montfort.org.br/bra/oracoes/oracoes/o_rosario/" target="_blank">Montfort</a> e gravuras pegas no <a href="https://www.verbumgloriae.es/" target="_blank">Verbum Gloriae.</a></p>
+		</div>
+	</footer>
+	<script src="assets/js/waves.min.js"></script>
+	<script src="assets/js/fslightbox.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>		<script src="https://bonavigo.github.io/assets/js/waves.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</html>
